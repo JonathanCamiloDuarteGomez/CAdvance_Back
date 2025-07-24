@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 //cofiguracion de los puestos del front y el back
 // ya que son diferentes para poder intercambiar info entre los dos
 @Configuration
-public class CorsConfiguration  implements WebMvcConfigurer {
+public class CorsConfiguration implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")

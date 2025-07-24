@@ -1,6 +1,5 @@
 package com.CAdvance.movies;
 
-import com.CAdvance.movies.principal.Principal;
 import com.CAdvance.movies.repositry.PeliculaRepository;
 import com.CAdvance.movies.repositry.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +24,6 @@ public class MoviesApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Principal principal = new Principal(API_KEY,repositoryPelicula,repositoryUsuario);
-		principal.muestraElMenu();
 
 	}
 }
